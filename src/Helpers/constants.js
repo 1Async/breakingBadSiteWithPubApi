@@ -1,0 +1,1 @@
+export const MyApi = "https://www.breakingbadapi.com/api";

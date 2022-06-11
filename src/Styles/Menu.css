@@ -1,0 +1,142 @@
+.menu{
+    margin-left: var(--side-nav-width);
+    height: auto;
+    transform: translate(-0%);
+    transition: 100ms ease-in;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.menu .serach{
+    width: 80%;
+    height: 50px;
+    background-color: var(--back-color);
+    display: flex;
+    border: 3px var(--font-color) solid;
+    align-items: center;
+}
+
+.menu .serach input{
+    width: 90%;
+    border: none;
+    background-color: transparent;
+    padding-left: 40px;
+    outline: none;
+    font-size: 20px;
+    color: var(--font-color);
+}
+
+.menu .serach .serach-icon{
+    display: flex;
+    width: 10%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menu .serach .serach-icon svg{
+    color: var(--font-color);
+    width: 90%;
+    height: 90%;
+}
+
+.menu .char-list{
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+}
+
+.menu .char-list .card{
+    width: 250px;
+    height: 380px;
+    background-color: var(--back-color);
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.menu .char-list .card .image img:hover{
+    transform: scale(1.07);
+}
+
+.menu .char-list .card .image{
+    width: 100%;
+    height: 85%;
+}
+
+.menu .char-list .card .image img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+}
+
+.menu .char-list .card .info{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+@media screen and (max-width:1300px){
+    .menu .char-list{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:1100px){
+    .menu .char-list{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.paginationBody{
+    display: flex;
+    width: 80%;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.paginationBody a{
+    margin: 10px;
+    border: 2px var(--font-color) solid;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--back-color);
+    padding: 6px;
+}
+
+.paginationBody a:hover{
+    background-color: var(--font-color);
+    color: black;
+}
+
+.Active a{
+    background-color: var(--font-color);
+    color: black;
+}
+
+
+@media screen and (max-width:800px){
+    .menu{
+        margin-left: 70px;
+        transform: translate(-0%);
+        transition: 100ms ease-in-out;
+    }
+
+    .menu .char-list{
+        grid-template-columns: 1fr;
+    }
+}

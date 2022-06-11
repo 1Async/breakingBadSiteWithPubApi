@@ -1,0 +1,85 @@
+.episodes{
+    margin-left: var(--side-nav-width);
+}
+
+.episodes .selectByEpisode{
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 40px;
+}
+
+.episodes .selectByEpisode select{
+    width: 30%;
+    height: 30px;
+    border: var(--font-color) 3px solid ;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: var(--font-color);
+    background-color: var(--back-color);
+}
+
+.episodes .episodeslist{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.episodes .episodeslist .episodeCard{
+    width: 70%;
+    height: 50px;
+    border: 2px black solid;
+    border-radius: 10px;
+    background-color: white;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+} 
+
+.episodes .episodeslist .episodeCard .span{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.episodes .episodeslist .episodeCard button{
+    width: 100px;
+    height: 100%;
+    text-align: center;
+    display: none;
+    cursor: pointer;
+    border: 1px black solid;
+    border-radius: 5px;
+    background-color: blue;
+    color:var(--font-color) ;
+    background-color: var(--back-color);
+}
+
+.episodes .episodeslist .episodeCard:hover button{
+    display: block;
+} 
+
+@media screen and (max-width:1000px){
+    .episodes .episodeslist .episodeCard{
+        width: 100%;
+    } 
+    .episodes{
+        margin-left: 70px;
+    }
+}
+
+@media screen and (max-width:800px){
+
+    .episodes .episodeslist .episodeCard .span.date{
+        display: none;
+    }
+    .episodes .episodeslist .episodeCard .span{
+        width: 50%;
+    }
+}

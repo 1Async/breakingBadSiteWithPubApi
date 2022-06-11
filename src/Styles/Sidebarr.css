@@ -1,0 +1,99 @@
+.sidebarr{
+    background-color: var(--back-color);
+    width: var(--side-nav-width);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    border-radius: 0 10px 10px 0;
+    transform: translate(-0%);
+    transition: 100ms ease-in;
+}
+
+.sidebarr .logo-area{
+   width: 100%;
+   height: 15%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.sidebarr .logo-area img{
+   width: 70%,;
+   height: 70%;
+   cursor: pointer;
+   filter: var(--filter);
+}
+
+.sidebarr .Links{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.sidebarr .Links .Link{
+    margin-bottom: 2px;
+    width: 100%;
+    height: 40px;
+    background-color: var(--dark-color);
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+ }
+
+.sidebarr .Links .Link:hover{
+    background-color: var(--black-color);
+}
+
+.sidebarr .Links .Link:active{
+    background-color: var(--font-color);
+    color:  var(--black-color);
+}
+
+.sidebarr .Links .Link:active a{
+    color:  var(--black-color);
+}
+
+.sidebarr .Links .Link a{
+   text-decoration: none;
+   color: var(--font-color);
+   display: flex;
+   align-items: center;
+   margin-left: 5px;
+   width: 100%;
+}
+
+.sidebarr .Links .Link a svg{
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+@media screen and (max-width:1000px){
+    .sidebarr{
+        width: 70px;
+        transform: translate(-0%);
+        transition: 100ms ease-in-out;
+    }
+
+    .sidebarr .Links .Link a span{
+        display: none;
+    }
+
+    .sidebarr .Links .Link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: none;
+    }
+}
+
+
+
+
+
+

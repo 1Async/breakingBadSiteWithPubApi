@@ -1,38 +1,35 @@
+@import url(https://fonts.googleapis.com/css?family=Exo+2:300,400,600,900);
+
+:root{
+  --font-color: #66FCF1;
+  --back-color:#1F2833;
+  --dark-color:#0B0C10;
+  --black-color:black;
+  --side-nav-width:150px;
+  --filter: invert(85%) sepia(15%) saturate(1284%) hue-rotate(119deg) brightness(100%) contrast(102%);
+  --backImg:url('./Assets/background.jpg');
+  
+  /*filter: invert(0%) sepia(0%) saturate(21%) hue-rotate(337deg) brightness(97%) contrast(105%);*/
+}
+
+* ,*::before,*::after{
+  box-sizing: border-box;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  font-family: 'Exo 2';
+  background-image:var(--backImg) ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+  width: auto;
+  height: 100%;
+  display: auto;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

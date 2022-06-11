@@ -1,0 +1,32 @@
+.topBarr{
+    width: auto;
+    height: 70px;
+    margin-left: var(--side-nav-width);
+    transform: translate(-0%);
+    transition: 100ms ease-in;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.topBarr .socialMedia{
+    margin-right: 20px;
+}
+
+.topBarr .socialMedia svg{
+    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+    filter: invert(85%) sepia(15%) saturate(1284%) hue-rotate(119deg) brightness(100%) contrast(102%);
+}
+
+@media screen and (max-width:800px){
+    .topBarr{
+        margin-left: 70px;
+        transform: translate(-0%);
+        transition: 100ms ease-in-out;
+    }
+    .topBarr .socialMedia{
+        margin-right: 5px;
+    }
+}
